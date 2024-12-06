@@ -1,0 +1,25 @@
+/* Grid container for the 3x3 matrix */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+/* Individual box styling */
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.box:hover {
+  border: 2px solid #666;
+}
